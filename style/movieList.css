@@ -394,12 +394,34 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 300px;
+}
+.section > h2{
+    width: 1100px;
+    margin: 30px 0;
+    font-weight: 350;
+    font-size: 29px;
+}
+/* 박스오피스 */
+.section .box_office{
+    width: 1100px;
+    border-bottom: 1px solid #503396;
+    margin-bottom: 30px;
+}
+.section .box_office button{
+    padding: 12px 80px;
+    border-bottom: 2px solid #ffffff;
+    border: 1px solid #503396;
+    font-size: 17px;
+    color: #351f67;
+    background-color: transparent;
 }
 
 /* 영화랭킹전체 */
 
 /* 영화별 */
 .movie-list{
+    width: 1100px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -456,7 +478,7 @@ body{
     width: 230px;
     height: 331px;
     color: #ffffff;
-    padding: 25px;
+    padding: 20px;
     transition: 0.5s;
     top: 0;
     left: 0;
@@ -473,13 +495,14 @@ body{
 }
 .movie-item .movie-thumb .movie-hover > span{
     font-size: 15px;
-    line-height: 25px;
+    line-height: 20px;
+    /* letter-spacing: -2px; */
 }
 .caption_line{
     width: 100%;
     height: 1px;
     background-color: #646464;
-    margin-top: 35px;
+    margin-top: 100px;
 }
 .movie-item .movie-thumb .movie-hover p{
     font-size: 16px;
@@ -491,38 +514,67 @@ body{
     color: #3d9dbb;
     font-weight: 500;
 }
+/* 제목, 연령가 / 예매율, 개봉일 */
+.movie-info .movie-title{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.movie-info .movie-title span{
+    width: 199px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.movie-info .movie-title > img{
+    width: 23px;
+}
 
-/* 좋아요수/예매버튼 */
+/* 좋아요수/예매버튼/돌비 */
 .movie-action{
     display: flex;
-    gap: 7px;
+    gap: 3px;
     margin-top: 10px;
 }
 .movie-action .likeBtn,
-.movie-action .reserveBtn{
+.movie-action .reserveBtn,
+.movie-action .dolbyBtn{
     width: 100%;
     height: 36px;
     border-radius: 5px;
-    font-size: 17px;
+    font-size: 15px;
     cursor: pointer;
 }
 .movie-action .likeBtn{
-    border: 1px solid #ffffff;
-    background-color: #181818;
-    color: #ffffff;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    color: #503396;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
 }
+.movie-action .likeBtn:hover{
+    background-color: #f3f2f7;
+}
 .movie-action .reserveBtn{
-    border: 2px solid #3d9dbb;
-    background-color: #3d9dbb;
+    border: 2px solid #503396;
+    background-color: #503396;
     color: #ffffff;
 }
-.movie-action .reserveBtn:hover{
-    border: 2px solid #277e99;
-    background-color: #277e99;
+.movie-action .dolbyBtn{
+    border: 2px solid #503396;
+    background-color: #503396;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.movie-action .reserveBtn:hover,
+.movie-action .dolbyBtn:hover{
+    border: 2px solid #351f67;
+    background-color: #351f67;
 }
 
 

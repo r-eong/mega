@@ -904,7 +904,8 @@ z-index: -1;
 /* 섹션4 */
 .section04{
     height: 640px;
-    display: flex;flex-direction: column;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 50px 0;
 }
